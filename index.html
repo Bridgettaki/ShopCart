@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Shopping Cart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">  
+
+
+<script src="https://kit.fontawesome.com/a2291e6430.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+  <body>
+    <section>
+      <!--Creating a navigation bar-->
+      <div class="container">
+        <header class="nav" id="and_menor">
+            <div class="nav-container-content">
+                <nav class="navbar">
+                    <a href="#">Sign-in</a>
+                    <a href="#">Login</a>
+                    <a href="#cart">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16" onclick="cartIcon()">
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708" />
+                      </svg>
+                      Cart
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="section-container-items">
+            <div class="section-items-col-12">
+                <div class="section">
+                    <h1>Softie Sofa</h1>
+                    <h3>Get comfortable in your own home</h3>
+                    <a href="#cart"><button><i class="fas fa-shopping-cart"onclick="addToCart('product-1', 'leather', 78000);"></i>At a cost of R78 000</button></a>
+                </div>
+
+                <div class="alta">
+                    <span class="alta-title">Find Yours</span>
+                   </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Creating the hero section for the products i am selling-->
+    <div class="container">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/pexels-maksgelatin-4352247.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">White tee</h2>
+          <p class="product-price">R60 000</p>
+          <p class="product-description">Short fitted couch with a pinch of brown</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addToCart('product-2', 'whiteTee', 60000);">Add to Cart</button>
+            <button class="compare">Compare</button>
+            
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/pexels-isaw-company-66472-945688.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Grey coup</h2>
+          <p class="product-price">R50 400</p>
+          <p class="product-description">Grey fitted with soft cusions</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addToCart('product-3', 'greyCoup', 50400);">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/pexels-heyho-6588592.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Codro Grey</h2>
+          <p class="product-price">R23 680</p>
+          <p class="product-description">A spacious one couch fitted with light cusions</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addToCart('product-4', 'Codro grey', 236800);">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/pexels-fotios-photos-1631918.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Codron fitted Couch</h2>
+          <p class="product-price">R100 000</p>
+          <p class="product-description">A grey coated couch with plitted cusions</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addToCart('product-5', 'CodronCouch', 100000);">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/pexels-olly-3757055.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Soothed couch</h2>
+          <p class="product-price">R80 880</p>
+          <p class="product-description">This is a brief description of the product.</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addToCart('product-6', 'SoothedCouch', 80880);">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="image/pexels-shirin-2986011.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Dawn blue couch</h2>
+          <p class="product-price">R135 060</p>
+          <p class="product-description">This is a brief description of the product.</p>
+          <div class="buttons">
+            <button class="add-to-cart" onclick="addToCart('product-7', 'DawnBlue', 135060);">Add to Cart</button>
+            <button class="compare">Compare</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section id="cart">
+      <h1>Shopping Cart</h1>
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Cart items will be displayed here -->
+        </tbody>
+      </table>
+      <button id="checkout-btn">Checkout</button>
+      <p id="total">Total: R0</p>
+    </section>
+
+  <script src="main.js"></script>
+
+
+
+
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
